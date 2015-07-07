@@ -34,7 +34,27 @@
 ;; Uncomment the lines below by removing semicolons and play with the
 ;; values in order to set the width (in characters wide) and height
 ;; (in lines high) Emacs will have whenever you start it
-(setq initial-frame-alist '((top . 0) (left . 0) (width . 165) (height . 35)))
+;; (setq initial-frame-alist '((top . 0) (left . 0) (width . 165) (height . 35)))
+
+;; the next 3 functions make emacs start up and occupy the left side of the screen
+(defun set-frame-pixel-size (frame width height)
+  "Sets size of FRAME to WIDTH by HEIGHT, measured in pixels."
+  (let ((pixels-per-char-width (/ (frame-pixel-width) (frame-width)))
+        (pixels-per-char-height (/ (frame-pixel-height) (frame-height))))
+    (set-frame-size frame
+                    (floor (/ width pixels-per-char-width))
+                    (floor (/ height pixels-per-char-height)))))
+
+(defun use-left-half-screen ()
+  (interactive)
+  (let* ((excess-width 32)
+         (excess-height 48)
+         (half-screen-width (- (/ (x-display-pixel-width) 2) excess-width))
+         (screen-height (- (x-display-pixel-height) excess-height)))
+    (set-frame-pixel-size (selected-frame) half-screen-width screen-height)))
+
+(if window-system
+    (use-left-half-screen))
 
 ;; These settings relate to how emacs interacts with your operating system
 (setq ;; makes killing/yanking interact with the clipboard
