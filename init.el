@@ -133,4 +133,4 @@
 ;; Langauage-specific
 (load "setup-clojure.el")
 (load "setup-js.el")
-(load "setup-cakePHP.el")
+(load "setup-php.el")
