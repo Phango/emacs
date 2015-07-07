@@ -1,0 +1,32 @@
+;;; -*- coding: utf-8 -*-
+
+;; ----- ido-last-directory-list -----
+(
+ ("/Users/michael.pang/.emacs.d/" . "customizations/")
+ ("/Users/michael.pang/" . ".emacs.d/")
+)
+
+;; ----- ido-work-directory-list -----
+(
+ "/Users/michael.pang/.emacs.d/customizations/"
+ "/Users/michael.pang/.emacs.d/"
+)
+
+;; ----- ido-work-file-list -----
+(
+ "keybinds.el"
+ "setup-php.el"
+ "setup-js.el"
+)
+
+;; ----- ido-dir-file-cache -----
+(
+ ("/Users/michael.pang/.emacs.d/" (21914 35513 0 0) "themes/" "README.md" "projectile-bookmarks.eld" "places" "init.el" "ido.last" "elpa/" "customizations/" "backups/" "auto-save-list/" ".smex-items" ".recentf" ".gitignore" ".git/" "../" "./")
+
+ ("/Users/michael.pang/.emacs.d/customizations/" (21914 11616 0 0) "ui.el" "shell-integration.el" "setup-js.el" "setup-clojure.el" "setup-cakePHP.el" "navigation.el" "misc.el" "keybinds.el" "elisp-editing.el" "editing.el" "../" "./")
+
+ ("/Users/michael.pang/" (21914 10845 0 0) "Public/" "Pictures/" "Music/" "Movies/" "Library/" "Downloads/" "Documents/" "Desktop/" "Applications/" ".viminfo" ".vim/" ".Trash/" ".subversion/" ".putty/" ".mysql_history" ".lein/" ".gnupg/" ".emacs.d/" ".DS_Store" ".cups/" ".config/" ".composer/" ".CFUserTextEncoding" ".cache/" ".bash_history" "../" "./")
+)
+
+;; ----- ido-unc-hosts-cache -----
+t
