@@ -127,6 +127,10 @@
 ;; For editing lisps
 (load "elisp-editing.el")
 
+;; Custom keybinds
+(load "keybinds.el")
+
 ;; Langauage-specific
 (load "setup-clojure.el")
 (load "setup-js.el")
+(load "setup-php.el")

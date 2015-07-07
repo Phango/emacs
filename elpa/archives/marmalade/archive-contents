@@ -452,6 +452,15 @@
  (tron-theme .
 	     [(12)
 	      nil "A theme loosely based on Tron: Legacy colors" single])
+ (transmission .
+	       [(0 4 1)
+		((emacs
+		  (24 4))
+		 (let-alist
+		  (1 0 3))
+		 (seq
+		  (1 5)))
+		"Interface to a Transmission session" single])
  (tracking .
 	   [(1 6)
 	    ((shorten
@@ -1644,7 +1653,7 @@
 	       (6 1)))
 	     "basic support for magit links" single])
  (org-journal .
-	      [(1 9 4)
+	      [(1 9 5)
 	       nil "a simple org-mode based journaling mode" single])
  (org-gnome .
 	    [(0 1)
@@ -4137,8 +4146,10 @@
 	 [(0 1 0)
 	  nil "eldoc mode for clojure" single])
  (clj-refactor .
-	       [(1 0 5)
-		((s
+	       [(1 1 0)
+		((emacs
+		  (24 3))
+		 (s
 		  (1 8 0))
 		 (dash
 		  (2 4 0))
@@ -4149,7 +4160,9 @@
 		 (multiple-cursors
 		  (1 2 2))
 		 (cider
-		  (0 8 1)))
+		  (0 9 1))
+		 (edn
+		  (1 1 1)))
 		"A collection of clojure refactoring functions" single])
  (clj-mode .
 	   [(0 9)
@@ -4439,9 +4452,11 @@
 		  (1 11 5)))
 		"Space align various Clojure forms" single])
  (alchemist .
-	    [(1 1 0)
+	    [(1 2 0)
 	     ((emacs
-	       (24)))
+	       (24 4))
+	      (company
+	       (0 8 0)))
 	     "Elixir tooling integration into Emacs" tar])
  (ahg .
       [(0 99)
