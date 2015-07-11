@@ -134,3 +134,6 @@
 (load "setup-clojure.el")
 (load "setup-js.el")
 (load "setup-php.el")
+
+;; reading asciidoc files
+(load "setup-asciidoc.el")

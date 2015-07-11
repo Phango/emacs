@@ -503,7 +503,7 @@
 	    [(2012 4 7)
 	     nil "replace a word with a synonym looked up in a web service." single])
  (theme-looper .
-	       [(0 0 20150613)
+	       [(0 0 20150710)
 		((cl-lib
 		  (0 5)))
 		"Loop thru the available color-themes" single])
@@ -1653,7 +1653,7 @@
 	       (6 1)))
 	     "basic support for magit links" single])
  (org-journal .
-	      [(1 9 5)
+	      [(1 9 6)
 	       nil "a simple org-mode based journaling mode" single])
  (org-gnome .
 	    [(0 1)
@@ -1741,6 +1741,9 @@
  (nssh-n .
 	 [(0 9 8)
 	  nil "SSH mode for Emacs" single])
+ (nssh .
+       [(0 9 9)
+	nil "New SSH mode for Emacs" single])
  (nsis-mode .
 	    [(0 44)
 	     nil "NSIS-mode" single])
