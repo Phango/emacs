@@ -3,3 +3,6 @@
 
 ;; .php for normal php files use web-mode
 (add-to-list 'auto-mode-alist '("\\.php$" .  web-mode))
+
+;; .html
+(add-to-list 'auto-mode-alist '("\\.html$" . web-mode))
